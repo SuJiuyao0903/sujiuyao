@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-cn">
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
+		<title>HTML5 模拟现实物理效果</title>
+		<style>
+			body {
+				overflow: hidden;
+				background-color: #000000;
+				user-select: none;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-o-user-select: none;
+				-ms-user-select: none;
+			}
+		</style>
+		<link rel="stylesheet" href="css/init.css"><!-- 备份http://dreamsky.github.io/main/blog/common/init.css -->
+	</head> 
+	<body>
+	<div id="canvas"></div>
+	<!-- <div class="footer-banner" style="position:absolute;bottom:-300px;left:-200px;width:728px; margin:30px auto"></div> -->
+	<script src="js/protoclass.js"></script>
+	<script src='js/box2d.js'></script>
+	<script src='js/main.js'></script>
+	<script src="js/jquery.min.js"></script><!-- 备份http://dreamsky.github.io/main/blog/common/jquery.min.js -->
+	<script src="js/init.js"></script>
+	<script type='text/javascript'> 
+    //禁用右键（防止右键查看源代码） 
+    window.oncontextmenu=function(){return false;} 
+    //禁止任何键盘敲击事件（防止F12和shift+ctrl+i调起开发者工具） 
+    window.onkeydown = window.onkeyup = window.onkeypress = function () { 
+    window.event.returnValue = false; 
+        return false; 
+    } 
+    //如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面 
+	//	var h = window.innerHeight,w=window.innerWidth; 
+	//	window.onresize = function () { 
+    //   if (h!= window.innerHeight||w!=window.innerWidth){ 
+    //        window.close(); 
+    //        window.location = "about:blank"; } } 
+</script> 
+	</body>
+</html>

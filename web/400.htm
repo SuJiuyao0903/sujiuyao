@@ -1,0 +1,138 @@
+﻿<!--
+	大佬js里面的东西就不要动了，这样就可以了 js是移植别人的缺一不可
+	有问题联系QQ202800100
+	本人使用的网站编辑是HBuilder 可以百度搜索一下，比DW好用多了
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>您访问的网页出错啦！</title>
+		<meta name="description" content="Some ideas for modern button styles and effects" />
+		<meta name="keywords" content="button, effect, hover, style, inspiration, web design" />
+		<meta name="author" content="Codrops" />
+		<link href="img/15.0904011.ico" mce_href="favicon.ico" rel="shortcut icon" type="img/15.0904011.ico" />
+		<script type="text/javascript" src="js/404jquery.min.js"></script>
+		<script type="text/javascript" src="js/404jquery.beattext.js"></script>
+		<script type="text/javascript" src="js/404easying.js"></script>
+		
+		<link rel="stylesheet" href="css/404style.css" />
+		<link rel="stylesheet" href="css/404button.css" />
+		<link rel="stylesheet" href="css/404reset.css"  />
+				  <script type="text/javascript">
+  		var system ={};  
+    	var p = navigator.platform;       
+        system.win = p.indexOf("Win") == 0;  
+        system.mac = p.indexOf("Mac") == 0;  
+       system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);     
+       if(system.win||system.mac||system.xll){//如果是电脑跳转到
+               window.location.href="#";  
+       }else{  //如果是手机,跳转到
+              window.location.href="m/400.html";  
+        }
+ </script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+		$('p#roloadText').beatText({isAuth:true,beatHeight:"1em",isRotate:false,upTime:100,downTime:100});
+		});
+		</script>
+	</head>
+	<body>
+		
+		<div class="logo" id="a" onclick="a();" title="点击我有惊喜！">
+				<img src="img/404head.jpg">
+			</div>
+			<br /><br />
+			<div class="container">
+		<p id="roloadText">网页维护中...</p>
+	</div>
+
+		<div class="box bg-1">
+				<button class="button button--antiman button--round-l button--text-medium" onclick="window.open('http://wpa.qq.com/msgrd?v=3&uin=1144998777&site=qq&menu=yes')"><span>联系我</span></button>
+	</div>
+	</div>
+	<div class="body_buttom">
+		<div class="body_buttom_a">
+			<h2 class="body_buttom_yq">友情链接</h2>
+			<a target="_blank" href="http://www.baidu.com">百度搜索</a>
+			<a target="_blank" href="http://www.bilibili.com">bilibili</a>
+			<a target="_blank" href="http://www.dilidili.name">dilidili</a>
+			<a target="_blank" href="http://www.acfun.cn">AcFan</a>
+			<a target="_blank" href="https://www.nicovideo.jp">niconico</a>
+			<br /><br /><br /><br />
+			<a target="_blank" href="">暂未开放</a>
+			<a target="_blank" href="">暂未开放</a>
+			<a target="_blank" href="">暂未开放</a>
+			<a target="_blank" href="">暂未开放</a>
+			<a target="_blank" href="">暂未开放</a>
+			<br /><br /><br /><br />
+			<a target="_blank" href="">暂未开放</a>
+			<a target="_blank" href="">暂未开放</a>
+			<a target="_blank" href="">暂未开放</a>
+			<a target="_blank" href="">暂未开放</a>
+			<a target="_blank" href="">暂未开放</a>
+		</div>
+		<div class="body_buttom_r body_buttom_r_gg">
+			<center>
+			<h2 class="gg_gg">
+				网站维护公告：
+			</h2>
+			<font class="gg_font">网站因轰炸出了故障-具体情况正在核实</font><br /><br />
+			<font class="gg_font2">对此事故对大家说声抱歉-未来网站开放时补偿大家</font><br /><br />
+			<font class="gg_font3">距离网站开启日倒计时：</font><br /><br />
+			<div id="CountMsg" class="HotDate"> 
+					<span id="t_d" class="gg_sj">00天</span> 
+					<span id="t_h" class="gg_sj">00时</span> 
+					<span id="t_m" class="gg_sj">00分</span> 
+					<span id="t_s" class="gg_sj">00秒</span> 
+			</div> 
+			<script type="text/javascript"> 
+				function getRTime(){ 
+				var EndTime= new Date('2099/3/30 00:00:00'); //截止时间 
+				var NowTime = new Date(); 
+				var t =EndTime.getTime() - NowTime.getTime(); 
+				var d=Math.floor(t/1000/60/60/24); 
+				var h=Math.floor(t/1000/60/60%24); 
+				var m=Math.floor(t/1000/60%60); 
+				var s=Math.floor(t/1000%60); 
+				document.getElementById("t_d").innerHTML = d + "天"; 
+				document.getElementById("t_h").innerHTML = h + "时"; 
+				document.getElementById("t_m").innerHTML = m + "分"; 
+				document.getElementById("t_s").innerHTML = s + "秒"; 
+				} 
+				setInterval(getRTime,1000); 
+		</script> 
+			</center>
+</div>
+<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">		
+<audio autoplay loop id="music">
+<source src="song/404.mp3" type="audio/mpeg">
+</audio>
+<script>   
+   function a(){
+     var audio = document.getElementById('music'); 
+     if(audio.paused){                 
+         audio.play();//audio.play();// 播放  
+     }
+     else{
+          audio.pause();// 暂停
+     } 
+   }
+</script>
+<script type='text/javascript'> 
+    //禁用右键（防止右键查看源代码） 
+    window.oncontextmenu=function(){return false;} 
+    //禁止任何键盘敲击事件（防止F12和shift+ctrl+i调起开发者工具） 
+    window.onkeydown = window.onkeyup = window.onkeypress = function () { 
+    window.event.returnValue = false; 
+        return false; 
+    } 
+    //如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面 
+	//	var h = window.innerHeight,w=window.innerWidth; 
+	//	window.onresize = function () { 
+    //   if (h!= window.innerHeight||w!=window.innerWidth){ 
+    //        window.close(); 
+    //        window.location = "about:blank"; } } 
+</script> 
+	</body>
+</html>

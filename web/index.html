@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script>document.title='木凛的二次元主页';</script>
+<meta name="fragment" content="!">
+<meta name="baidu-site-verification" content="aJ3fRg1kbd" />
+<meta name='robots' content='index,follow' />
+<link rel='stylesheet' id='generalStyle-css'  href='style_light.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contentFont-css'  href='http://fonts.googleapis.com/css?family=PT+Sans:regular&amp;subset=cyrillic,latin' type='text/css' media='all' />
+<link id='headerFont-css' href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+<script type='text/javascript' src='js/jquery-1.7.min.js'></script>
+<script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+<!-- <script type='text/javascript' src='js/prettyPhoto/js/jquery.prettyPhoto.js'></script> -->
+<script type='text/javascript' src='js/jquery.quicksand.js'></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.history.js"></script>
+<script type='text/javascript' src="main.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon_light.ico" />
+<script type='text/javascript'>
+var bgTime = 5000; // bg Image/Video animation display duration
+var bgPaused = false; // bg Image/Video animation paused
+var menuTime = 600; // menu delay
+var autoPlay = true; // Background audio autoplay
+var loop = true; // Background audio loop or next song
+var twtTime = 3000; // Twitter display duration
+var prettyTheme = 'light_square'; //Pretty Photo Plug-in Teheme
+
+var normalFade = false; // Normal fade animation
+var frontPage = ''; // Front Page URL
+var btnSoundURL = ''; // Button Hover Sound
+var menuPositionFixed = false;
+
+//v1.2
+var videoPaused = false;
+var menuAlwaysOpen = false;
+var bgStretch = true;
+</script>
+<script type='text/javascript' src="js/froogaloop.js"></script>
+</head>
+<body>
+<div id="body-wrapper">
+	<!-- BEGIN: Main Elements; Please don't change these items -->
+	<div id="bgImage"><div id="bgImageWrapper"></div></div>
+	<div id="bgPattern"></div>
+	<div id="bgText"><h3></h3><div class="subText"></div></div>
+	<div id="content">
+		<div id="contentBox"></div>
+		<div id="contentLoading">
+			<div id="CtLoading">
+				<br>Loading<br/>
+				<img src="images/loading1.gif" width="80" height="10" alt="" />
+			</div>
+		</div>
+	</div>
+	<!-- END: Main Elements -->
+	<!-- BEGIN: Vertical Side Bar -->
+	<!-- 
+		// Every <li> includes Thumbnail, Video or Background Image
+		Caption and Description elementes
+	-->
+	<ul id="bgImages">
+		<!-- BEGIN: Background Element -->
+		<li>
+			<!-- Thumbnail Image must be 120x80px  and class="thumb" -->
+			<!-- BG1外链 -->
+			<img class="thumb" src="https://s2.ax1x.com/2019/03/14/AkLfmV.png" alt="" />
+			
+			<img class="source" src="https://s2.ax1x.com/2019/03/14/AkLfmV.png" alt="" />
+
+			<!-- BEGIN: description; h3 and p tags are optional -->
+			<h3>欢迎来到小窝</h3>
+			<p>苏玖瑶的个人主页，欢迎大家来访</p>
+			<!-- END: description -->
+		</li>
+		<!-- END: Bakground Element -->
+		<!-- BG2外链 -->
+		<li>
+			<img class="thumb" src="https://s2.ax1x.com/2019/03/14/AkLrFg.jpg" alt="" />
+			<img class="source" src="https://s2.ax1x.com/2019/03/14/AkLrFg.jpg" alt="" />
+			<h3>老司机的天堂</h3>
+			<p>各类老司机开车，你还在等什么呢，跟老司机一块上车吧。</p>
+		</li>
+		<!-- BG3外链 -->
+		<li>
+			<img class="thumb" src="https://s2.ax1x.com/2019/03/14/AkLBTS.jpg" alt="" />
+			<img class="source" src="https://s2.ax1x.com/2019/03/14/AkLBTS.jpg" alt="" />
+			<h3>小窝论坛</h3>
+			<p>一个无论什么都能讨论的论坛，欢迎你的加入。（暂未开放）</p>
+		</li>
+		<!-- BG4外链 -->
+		<li>
+			<img class="thumb" src="https://s2.ax1x.com/2019/03/14/AkL0w8.jpg" alt="" />
+			<img class="source" src="https://s2.ax1x.com/2019/03/14/AkL0w8.jpg" alt="" />
+			<h3>QQ群</h3>
+			<p>本站暂时没有QQ群哦~</p>
+		</li>
+		<!-- BG5外链 -->
+		<li>
+			<img class="thumb" src="https://s2.ax1x.com/2019/03/14/AkLyWj.jpg" alt="" />
+			<img class="source" src="https://s2.ax1x.com/2019/03/14/AkLyWj.jpg" alt="" />
+			<h3></h3>
+			<p></p>
+		</li>
+		<!-- BG6外链 -->
+		<li>
+			<img class="thumb" src="https://s2.ax1x.com/2019/03/14/AkLcSs.jpg" alt="" />
+			<img class="source" src="https://s2.ax1x.com/2019/03/14/AkLcSs.jpg" alt="" />
+			<h3>联系笨站长</h3>
+			<!-- <p>邮件：admin@miku52.top</p> -->
+			<p>QQ：2289390947</p>
+		</li>
+		<!-- BG7外链 -->
+        <li>
+			<img class="thumb" src="https://s2.ax1x.com/2019/03/14/AkLsYQ.jpg" alt="" />
+			<img class="source" src="https://s2.ax1x.com/2019/03/14/AkLsYQ.jpg" alt="" />
+			<h3>素材来源</h3>
+			<p>樱花庄的宠物女孩，伪恋，从零开始的异世界生活，缘之空，游戏人生。</p>
+		</li>
+		<!-- BG8外链 -->
+        <li>
+			<img class="thumb" src="https://s2.ax1x.com/2019/03/14/AkL2yq.jpg" alt="" />
+			<img class="source" src="https://s2.ax1x.com/2019/03/14/AkL2yq.jpg" alt="" />
+			<h3>其实。。。</h3>
+			<p>其实是想加一个右键美化的，但是太臃肿了，所以就这样子吧</p>
+		</li>
+		<!-- BG9外链 -->
+        <li>
+			<img class="thumb" src="https://s2.ax1x.com/2019/03/14/AkLgln.jpg" alt="" />
+			<img class="source" src="https://s2.ax1x.com/2019/03/14/AkLgln.jpg" alt="" />
+			<h3></h3>
+			<p></p>
+		</li>
+		<!-- BG10外链 -->
+        <li>
+			<img class="thumb" src="https://s2.ax1x.com/2019/03/14/AkLRO0.jpg" alt="" />
+			<img class="source" src="https://s2.ax1x.com/2019/03/14/AkLRO0.jpg" alt="" />
+			<h3>小窝友链招租</h3>
+			<p>行业差距最好不要太大，不然转化率堪忧。</p>
+		</li>
+	</ul>
+	
+	<!-- BEGIN: Main Menu -->
+	<div id="menu-container">
+		<!-- BEGIN: Logo -->
+		<div id="logo">
+			<img src="img/404head.jpg " title="1" width="100" height="100" />
+		</div>
+		<!-- END: Logo -->
+		
+		<!-- 
+			// Menu classes must be used with the same hierarchy and the same class names
+		-->
+		<div id="mainmenu">
+			<div class="menu-header">
+			<ul id="menu-main-menu" class="menu">
+				<li id="menu-item-1">
+					<a href="/"><span class="title">HOME</span></a>
+				</li>
+				<li id="menu-item-2">
+					<a href="time/"><span class="title">时钟</span></a>
+					
+				</li>
+				<li id="menu-item-3">
+					<a href="ip/"><span class="title">ip查询</span></a>
+				</li>
+				
+				<li id="menu-item-4">
+					<a href="Tool/" target="_blank"><span class="title">Tools</span></a>
+				</li>
+				<!-- <li id="menu-item-5">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=223c207f36ffde0b3f783acb4cb26cccfeebed222e4410db1433012c671f9f54"><span class="title">加群</span></a>
+					
+				</li> -->
+				<li id="menu-item-6"><a href="http://wpa.qq.com/msgrd?v=3&uin=2289390947&site=qq&menu=yes"><span class="title">联系笨站长</span></a></li>
+			</ul>
+			</div>
+		</div>
+		
+		<!-- BEGIN: Menu Opener; Please dont remove this element to use menu. -->
+		<div id="menuOpener">MORE</div>
+		<div id="menuCloser">CLOSE</div>
+		<!-- END: Menu Opener -->
+	</div>
+	<!-- END: Main Menu -->
+	
+		
+	<!-- BEGIN: Audio List -->
+	
+	<audio width="0" height="0" src="http://music.163.com/song/media/outer/url?id=1342216983.mp3" autoplay="sutoplay" playcount="-1" >
+	</audio>
+	<!-- END: Audio List -->
+	
+	<!-- BEGIN: Footer -->
+	<div id="footer">
+		<div id="footertext"> Copyright &copy; 2017 | 苏玖瑶</div>
+
+
+		<!-- BEGIN: Background Controller Buttons -->
+		<!-- <div id="bgControl">
+			<a class="prev" href="javascript:void(0);" onClick="prevBg()"></a>
+			<a class="play" href="javascript:void(0);" onClick="playBg()"></a>
+			<a class="pause" href="javascript:void(0);" onClick="pauseBg()"></a>
+			<a class="next" href="javascript:void(0);" onClick="nextBg()"></a>
+		</div> -->
+		<!-- END: Background Controller Buttons -->
+		
+		
+	</div>
+	<!-- END: Footer -->
+	
+			
+</div>
+<script type='text/javascript'> 
+    //禁用右键（防止右键查看源代码） 
+    window.oncontextmenu=function(){return false;} 
+    //禁止任何键盘敲击事件（防止F12和shift+ctrl+i调起开发者工具） 
+    window.onkeydown = window.onkeyup = window.onkeypress = function () { 
+    window.event.returnValue = false; 
+        return false; 
+    } 
+    //如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面 
+	//	var h = window.innerHeight,w=window.innerWidth; 
+	//	window.onresize = function () { 
+    //   if (h!= window.innerHeight||w!=window.innerWidth){ 
+    //        window.close(); 
+    //        window.location = "about:blank"; } } 
+</script> 
+
+<!-- BEGIN: First Loading; Please don't remove this element -->
+<div id="bodyLoading">
+	<div id="loading">
+		正在加载中。。。<br/>
+		<img src="images/loading1.gif" width="200" height="" alt="loading" />
+	</div>
+</div>
+<!-- END: First Loading -->
+
+</body>
+</html>
